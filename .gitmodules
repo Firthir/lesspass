@@ -22,6 +22,18 @@
 [submodule "cli"]
 	path = cli
 	url = git@github.com:lesspass/cli.git
-[submodule "webcrypto"]
-	path = webcrypto
-	url = git@github.com:lesspass/webcrypto.git
+[submodule "desktop"]
+	path = desktop
+	url = git@github.com:lesspass/desktop.git
+[submodule "cordova"]
+	path = cordova
+	url = git@github.com:lesspass/cordova.git
+[submodule "snap"]
+	path = snap
+	url = git@github.com:lesspass/snap.git
+[submodule "move"]
+	path = move
+	url = git@github.com:lesspass/move.git
+[submodule "openssl"]
+	path = openssl
+	url = git@github.com:lesspass/openssl.git

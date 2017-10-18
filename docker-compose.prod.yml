@@ -16,7 +16,7 @@ services:
       - '8000'
     volumes:
       - www:/backend/www
-    depends_on:
+    links:
       - db
     env_file:
       - .env
@@ -31,14 +31,14 @@ services:
     image: lesspass/frontend:latest
   nginx:
     restart: always
-    image: lesspass/nginx:latest
+    image: lesspass/nginx:letsencrypt
     ports:
       - '80:80'
       - '443:443'
     volumes_from:
       - backend
     volumes:
-      - ./ssl:/certificates
+      - ./letsencrypt:/etc/letsencrypt
     links:
       - backend
       - frontend
